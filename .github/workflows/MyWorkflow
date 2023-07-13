@@ -12,7 +12,6 @@ jobs:
     steps:
       - run: echo "Deploy"
       - run: echo "${{ vars.MY_REPO_VAR }}"
-      - run: echo "${{ vars.VAR_1 }}"
   
   deploy:
     name: Deploy
@@ -21,4 +20,3 @@ jobs:
     needs: build
     steps:
       - run: echo "Deploy"
-      - run: echo "${{ vars.VAR_1 }}"
